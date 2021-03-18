@@ -1,0 +1,16 @@
+PODS:
+  - PDFNet (8.1.2.76990)
+
+DEPENDENCIES:
+  - PDFNet (from `https://www.pdftron.com/downloads/ios/cocoapods/pdfnet/latest.podspec`)
+
+EXTERNAL SOURCES:
+  PDFNet:
+    :podspec: https://www.pdftron.com/downloads/ios/cocoapods/pdfnet/latest.podspec
+
+SPEC CHECKSUMS:
+  PDFNet: 42280e3d039b3739785c2817c54038a4c5c535e5
+
+PODFILE CHECKSUM: 2cc525d85158f52b557e2ffdf75a1e6eff365e43
+
+COCOAPODS: 1.9.3
