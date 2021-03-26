@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		14643318D0528D16EA4588CE /* Pods_pdftronExampleSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D633A01E249C2FEFC0D84F /* Pods_pdftronExampleSwift.framework */; };
+		16036517260E3635001E4AE6 /* PTLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 16036515260E3635001E4AE6 /* PTLocalizable.strings */; };
 		1650920B2603AE32009B81D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1650920A2603AE32009B81D2 /* AppDelegate.swift */; };
 		1650920D2603AE32009B81D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1650920C2603AE32009B81D2 /* SceneDelegate.swift */; };
 		1650920F2603AE32009B81D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1650920E2603AE32009B81D2 /* ViewController.swift */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16036516260E3635001E4AE6 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/PTLocalizable.strings; sourceTree = "<group>"; };
+		16036519260E3639001E4AE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/PTLocalizable.strings; sourceTree = "<group>"; };
 		165092072603AE32009B81D2 /* pdftronExampleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pdftronExampleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1650920A2603AE32009B81D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1650920C2603AE32009B81D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +73,7 @@
 				165092132603AE33009B81D2 /* Assets.xcassets */,
 				165092152603AE33009B81D2 /* LaunchScreen.storyboard */,
 				165092182603AE33009B81D2 /* Info.plist */,
+				16036515260E3635001E4AE6 /* PTLocalizable.strings */,
 			);
 			path = pdftronExampleSwift;
 			sourceTree = "<group>";
@@ -80,7 +84,6 @@
 				95B77FC108F07F19B8C46D3C /* Pods-pdftronExampleSwift.debug.xcconfig */,
 				E8A875FED86714D7670F3555 /* Pods-pdftronExampleSwift.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -136,6 +139,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 165091FE2603AE32009B81D2;
 			productRefGroup = 165092082603AE32009B81D2 /* Products */;
@@ -155,6 +159,7 @@
 				165092172603AE33009B81D2 /* LaunchScreen.storyboard in Resources */,
 				165092142603AE33009B81D2 /* Assets.xcassets in Resources */,
 				165092122603AE32009B81D2 /* Main.storyboard in Resources */,
+				16036517260E3635001E4AE6 /* PTLocalizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +238,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		16036515260E3635001E4AE6 /* PTLocalizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				16036516260E3635001E4AE6 /* fr */,
+				16036519260E3639001E4AE6 /* en */,
+			);
+			name = PTLocalizable.strings;
+			sourceTree = "<group>";
+		};
 		165092102603AE32009B81D2 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
