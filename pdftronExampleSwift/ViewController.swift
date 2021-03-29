@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         navigationController.navigationBar.isTranslucent = false
         navigationController.toolbar.isTranslucent = false
         // Open a file from URL.
-        let fileURL: URL = URL(string:"https://pdftron.s3.amazonaws.com/downloads/pl/sample.pdf")!
+        let fileURL: URL = URL(string:"https://pdftron.s3.amazonaws.com/downloads/pdfref.pdf")!
         documentController.openDocument(with: fileURL)
         // Show navigation (and document) controller.
         self.present(navigationController, animated: true, completion: nil)
