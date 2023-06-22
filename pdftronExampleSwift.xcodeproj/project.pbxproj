@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14643318D0528D16EA4588CE /* Pods_pdftronExampleSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D633A01E249C2FEFC0D84F /* Pods_pdftronExampleSwift.framework */; };
 		16036517260E3635001E4AE6 /* PTLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 16036515260E3635001E4AE6 /* PTLocalizable.strings */; };
 		1650920B2603AE32009B81D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1650920A2603AE32009B81D2 /* AppDelegate.swift */; };
 		1650920D2603AE32009B81D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1650920C2603AE32009B81D2 /* SceneDelegate.swift */; };
@@ -15,6 +14,8 @@
 		165092122603AE32009B81D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 165092102603AE32009B81D2 /* Main.storyboard */; };
 		165092142603AE33009B81D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 165092132603AE33009B81D2 /* Assets.xcassets */; };
 		165092172603AE33009B81D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 165092152603AE33009B81D2 /* LaunchScreen.storyboard */; };
+		45725AA52A39D5F200A41039 /* PDFTron in Frameworks */ = {isa = PBXBuildFile; productRef = 45725AA42A39D5F200A41039 /* PDFTron */; };
+		45B27B702A41A1D400809986 /* test2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 45B27B6F2A41A1D400809986 /* test2.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,9 +29,7 @@
 		165092132603AE33009B81D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		165092162603AE33009B81D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		165092182603AE33009B81D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		95B77FC108F07F19B8C46D3C /* Pods-pdftronExampleSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pdftronExampleSwift.debug.xcconfig"; path = "Target Support Files/Pods-pdftronExampleSwift/Pods-pdftronExampleSwift.debug.xcconfig"; sourceTree = "<group>"; };
-		D4D633A01E249C2FEFC0D84F /* Pods_pdftronExampleSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pdftronExampleSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8A875FED86714D7670F3555 /* Pods-pdftronExampleSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pdftronExampleSwift.release.xcconfig"; path = "Target Support Files/Pods-pdftronExampleSwift/Pods-pdftronExampleSwift.release.xcconfig"; sourceTree = "<group>"; };
+		45B27B6F2A41A1D400809986 /* test2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = test2.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14643318D0528D16EA4588CE /* Pods_pdftronExampleSwift.framework in Frameworks */,
+				45725AA52A39D5F200A41039 /* PDFTron in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,7 +49,6 @@
 			children = (
 				165092092603AE32009B81D2 /* pdftronExampleSwift */,
 				165092082603AE32009B81D2 /* Products */,
-				50E0EB882EB00BE095551333 /* Pods */,
 				F6B2B5204CC552EAF49021D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -72,25 +70,16 @@
 				165092102603AE32009B81D2 /* Main.storyboard */,
 				165092132603AE33009B81D2 /* Assets.xcassets */,
 				165092152603AE33009B81D2 /* LaunchScreen.storyboard */,
+				45B27B6F2A41A1D400809986 /* test2.pdf */,
 				165092182603AE33009B81D2 /* Info.plist */,
 				16036515260E3635001E4AE6 /* PTLocalizable.strings */,
 			);
 			path = pdftronExampleSwift;
 			sourceTree = "<group>";
 		};
-		50E0EB882EB00BE095551333 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				95B77FC108F07F19B8C46D3C /* Pods-pdftronExampleSwift.debug.xcconfig */,
-				E8A875FED86714D7670F3555 /* Pods-pdftronExampleSwift.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		F6B2B5204CC552EAF49021D6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D4D633A01E249C2FEFC0D84F /* Pods_pdftronExampleSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -102,18 +91,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1650921B2603AE33009B81D2 /* Build configuration list for PBXNativeTarget "pdftronExampleSwift" */;
 			buildPhases = (
-				54ED4901F6FA26A1AAD0890B /* [CP] Check Pods Manifest.lock */,
 				165092032603AE32009B81D2 /* Sources */,
 				165092042603AE32009B81D2 /* Frameworks */,
 				165092052603AE32009B81D2 /* Resources */,
-				E7CE8176536A20EB811C1011 /* [CP] Embed Pods Frameworks */,
-				5AE50175C7675E8D02BD49AE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = pdftronExampleSwift;
+			packageProductDependencies = (
+				45725AA42A39D5F200A41039 /* PDFTron */,
+			);
 			productName = pdftronExampleSwift;
 			productReference = 165092072603AE32009B81D2 /* pdftronExampleSwift.app */;
 			productType = "com.apple.product-type.application";
@@ -142,6 +131,9 @@
 				fr,
 			);
 			mainGroup = 165091FE2603AE32009B81D2;
+			packageReferences = (
+				45725AA32A39D5F200A41039 /* XCRemoteSwiftPackageReference "pdftron-apple-package" */,
+			);
 			productRefGroup = 165092082603AE32009B81D2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -158,71 +150,13 @@
 			files = (
 				165092172603AE33009B81D2 /* LaunchScreen.storyboard in Resources */,
 				165092142603AE33009B81D2 /* Assets.xcassets in Resources */,
+				45B27B702A41A1D400809986 /* test2.pdf in Resources */,
 				165092122603AE32009B81D2 /* Main.storyboard in Resources */,
 				16036517260E3635001E4AE6 /* PTLocalizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		54ED4901F6FA26A1AAD0890B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-pdftronExampleSwift-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5AE50175C7675E8D02BD49AE /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-pdftronExampleSwift/Pods-pdftronExampleSwift-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-pdftronExampleSwift/Pods-pdftronExampleSwift-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pdftronExampleSwift/Pods-pdftronExampleSwift-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E7CE8176536A20EB811C1011 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-pdftronExampleSwift/Pods-pdftronExampleSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-pdftronExampleSwift/Pods-pdftronExampleSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pdftronExampleSwift/Pods-pdftronExampleSwift-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		165092032603AE32009B81D2 /* Sources */ = {
@@ -384,11 +318,12 @@
 		};
 		1650921C2603AE33009B81D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95B77FC108F07F19B8C46D3C /* Pods-pdftronExampleSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XFNQF25BM4;
 				INFOPLIST_FILE = pdftronExampleSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -396,6 +331,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = no.catenda.pdftronExampleSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -403,11 +339,12 @@
 		};
 		1650921D2603AE33009B81D2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E8A875FED86714D7670F3555 /* Pods-pdftronExampleSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XFNQF25BM4;
 				INFOPLIST_FILE = pdftronExampleSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -415,6 +352,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = no.catenda.pdftronExampleSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -442,6 +380,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		45725AA32A39D5F200A41039 /* XCRemoteSwiftPackageReference "pdftron-apple-package" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/PDFTron/pdftron-apple-package";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		45725AA42A39D5F200A41039 /* PDFTron */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 45725AA32A39D5F200A41039 /* XCRemoteSwiftPackageReference "pdftron-apple-package" */;
+			productName = PDFTron;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 165091FF2603AE32009B81D2 /* Project object */;
 }

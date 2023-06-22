@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "pdftron-apple-package",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/PDFTron/pdftron-apple-package",
+      "state" : {
+        "revision" : "3cd3702a8ed6e816ae491cc680614069dbc4d14b",
+        "version" : "10.1.81991"
+      }
+    }
+  ],
+  "version" : 2
+}
