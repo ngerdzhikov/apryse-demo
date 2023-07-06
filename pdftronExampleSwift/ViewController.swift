@@ -5,12 +5,9 @@ class ViewController: UIViewController {
     
     private var padding = 0
     private let documentController = PTDocumentController()
-    private var initialZoom = 0.0
-    private var bottom = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -18,13 +15,14 @@ class ViewController: UIViewController {
         navigationController.modalPresentationStyle = .fullScreen
         navigationController.navigationBar.isTranslucent = false
         navigationController.toolbar.isTranslucent = false
-        navigationController.navigationBar.topItem?.leftBarButtonItems = [UIBarButtonItem(title: "Zoom", style: .plain, target: self, action: #selector(test))]
+        navigationController.navigationBar.topItem?.leftBarButtonItems = [
+            UIBarButtonItem(title: "Zoom Rect", style: .plain, target: self, action: #selector(zoomRect)),
+            UIBarButtonItem(title: "Disable padding", style: .plain, target: self, action: #selector(disablePadding)),
+        ]
         
-//        let fileURL: URL = URL(string:"https://pdftron.s3.amazonaws.com/downloads/pdfref.pdf")!
         let fileURL = Bundle.main.url(forResource: "test2", withExtension: "pdf")
         documentController.openDocument(with: fileURL!)
-        
-        initialZoom = documentController.pdfViewCtrl.zoom
+//        documentController.pdfViewCtrl.dele
         
         self.present(navigationController, animated: true) {
             self.enablePadding()
@@ -32,16 +30,13 @@ class ViewController: UIViewController {
         
     }
     
-    @objc func test() {
-        var pdfRect: PTPDFRect!
-        if bottom {
-            pdfRect = PTPDFRect(x1: 0, y1: 0, x2: 224, y2: 233)
-        } else {
-            pdfRect = PTPDFRect(x1: 2800, y1: 3800, x2: 3024, y2: 4033)
-        }
+    @objc func zoomRect() {
+        enablePadding()
+        // if you uncomment the next line it behaves a little better but still now perfectly
+//        documentController.pdfViewCtrl.contentScrollView.zoom(to: documentController.pdfViewCtrl.frame, animated: false)
+        var pdfRect = PTPDFRect(x1: -266.91396, y1: 350.44244, x2: 352.46744, y2: 619.9053)!
         let cgRect = documentController.pdfViewCtrl.pdfRectPage2CGRectScreen(pdfRect, pageNumber: 1)
         documentController.pdfViewCtrl.contentScrollView.zoom(to: cgRect, animated: true)
-        bottom = !bottom
     }
     
     private func enablePadding() {
@@ -49,6 +44,11 @@ class ViewController: UIViewController {
         let verticalPadding = 800.0
         documentController.pdfViewCtrl.contentScrollView.contentInset = UIEdgeInsets(top: verticalPadding / 2, left: horizontalPadding / 2,
                                                                                      bottom: verticalPadding / 2, right: horizontalPadding / 2)
-        
     }
+    
+    @objc func disablePadding() {
+        documentController.pdfViewCtrl.contentScrollView.contentInset = .zero
+    }
+    
+    
 }
