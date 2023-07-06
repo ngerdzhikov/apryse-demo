@@ -22,6 +22,8 @@ class ViewController: UIViewController {
         
         let fileURL = Bundle.main.url(forResource: "test2", withExtension: "pdf")
         documentController.openDocument(with: fileURL!)
+        
+        self.present(navigationController, animated: true)
     }
     
     @objc func zoomRect() {
