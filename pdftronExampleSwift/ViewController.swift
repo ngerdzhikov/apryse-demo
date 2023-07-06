@@ -22,12 +22,6 @@ class ViewController: UIViewController {
         
         let fileURL = Bundle.main.url(forResource: "test2", withExtension: "pdf")
         documentController.openDocument(with: fileURL!)
-//        documentController.pdfViewCtrl.dele
-        
-        self.present(navigationController, animated: true) {
-            self.enablePadding()
-        }
-        
     }
     
     @objc func zoomRect() {
