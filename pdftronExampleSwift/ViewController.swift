@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     
     @objc func zoomRect() {
         enablePadding()
-        // if you uncomment the next line it behaves a little better but still now perfectly
+        // if you uncomment the next line it behaves a little better but still not perfectly
 //        documentController.pdfViewCtrl.contentScrollView.zoom(to: documentController.pdfViewCtrl.frame, animated: false)
         var pdfRect = PTPDFRect(x1: -266.91396, y1: 350.44244, x2: 352.46744, y2: 619.9053)!
         let cgRect = documentController.pdfViewCtrl.pdfRectPage2CGRectScreen(pdfRect, pageNumber: 1)
